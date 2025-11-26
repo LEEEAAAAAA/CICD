@@ -1,0 +1,23 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build
+        run: echo 'Build.'
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test
+        run: echo 'test.'
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deployment
+        run: echo 'deploying.'
