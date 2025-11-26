@@ -8,13 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Build
-        run: echo 'Build.'
+        run: mvn clean install -dSkipTests
 
   test:
     runs-on: ubuntu-latest
     steps:
       - name: Test
-        run: echo 'test.'
+        run: mvn clean install
 
   deploy:
     runs-on: ubuntu-latest

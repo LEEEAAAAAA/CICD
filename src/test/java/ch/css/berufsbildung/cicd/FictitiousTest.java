@@ -20,7 +20,7 @@ public class FictitiousTest {
     void test_sad() {
         final int expected = 2;
 
-        final int actual = 2;
+        final int actual = 4;
 
         assertThat(actual).isEqualTo(expected);
     }
